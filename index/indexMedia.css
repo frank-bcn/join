@@ -1,0 +1,222 @@
+@media (max-width: 450px) and (max-height: 700px) {
+
+    /* Login Seite */
+
+    #container {
+        height: 117vh !important;
+    }
+
+    #desktopLogo {
+        height: 65px !important;
+    }
+
+    #loginContainer {
+        height: 65vh !important;
+    }
+
+    #headpartRightSideContainer {
+        position: absolute;
+        bottom: 3vh !important;
+        left: 20vw;
+    }
+
+    /* Forgot Password Seite */
+
+    #forgotPwContainer {
+        height: 50vh !important;
+    }
+    
+    #forgotPwContainer h1 {
+        font-size: 30px;
+    }
+    
+    .backBtn {
+        scale: .6;
+        left: .5rem;
+        top: .5rem;
+    }
+
+    /* Sign up Seite */
+
+    #signUpContainer {
+        height: 50vh !important;
+    }
+
+    .mobileLogoAnimation {
+        transform: translate(-66vw, -72vh) !important;
+    }
+    
+    .blackLogoAnimation {
+        transform: translate(-66vw, -72vh) !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #container {
+        height: 115vh;
+    }
+
+    #loginSection {
+        flex-direction: column;
+    }
+
+    #headlineContainer {
+        text-align: center;
+    }
+
+    #headlineContainer h1 {
+        font-size: 48px !important;
+    }
+
+
+    /* Login Seite */
+    #headpart {
+        padding: 0.5rem;
+        width: 80%;
+    }
+
+    #loginContainer {
+        height: 60vh !important;
+        width: 80vw;
+    }
+
+    #headpartRightSideContainer {
+        position: absolute;
+        bottom: 5vh;
+        left: 17vw;
+    }
+
+
+    #rememberMeContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #borderBottom {
+        bottom: 0;
+    }
+
+    /* Forgot Password Seite */
+
+    #forgotPwContainer {
+        height: 60vh !important;
+    }
+
+    .backBtn {
+        scale: .6;
+        left: .5rem;
+        top: .5rem;
+    }
+
+    /* Sign up Seite */
+
+    #signUpContainer {
+        height: 60vh !important;
+        width: 80vw;
+    }
+
+    #signUpContainer button {
+        margin-top: 50px !important;
+    }
+
+    /* Mobile Animation */
+
+    #mobileAnimationContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2A3647;
+        opacity: 1;
+    }
+
+    #blackLogoAnimationContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #mobileLogo {
+        scale: .8;
+    }
+
+    #blackLogo {
+        scale: .8;
+        opacity: 0;
+    }
+
+    .mobileContainerAnimation {
+        opacity: 0 !important;
+        transition: opacity 800ms ease-in-out;
+    }
+
+    .z-index {
+        z-index: -1;
+    }
+
+    .mobileLogoAnimation {
+        transform: translate(-66vw, -74vh) !important;
+        transition: all 800ms ease-in-out;
+        scale: .6 !important;
+    }
+    
+    .blackLogoAnimation {
+        transform: translate(-66vw, -74vh) !important;
+        transition: all 800ms ease-in-out;
+        scale: .6 !important;
+        opacity: 1 !important;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #loginContainer {
+        width: 100% !important;
+    }
+
+    #forgotPwContainer {
+        width: 90% !important;
+    }
+
+    #signUpContainer {
+        width: 100% !important;
+    }
+
+    .backBtn {
+        scale: .8;
+    }
+}
+
+@media (max-width: 2000px) {
+    .h1 {
+        font-size: 44px;
+    }
+
+    #signUpContainer { 
+        gap: 10px;
+    }
+
+    #signUpContainer button {
+        margin-top: 0;
+    }
+
+    main {
+        height: 400px !important;
+    }
+
+    #forgotPwContainer {
+        height: 350px !important;
+    }
+}

@@ -1,0 +1,163 @@
+/* task fullscreen */
+.task {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    padding: 48px;
+    border-radius: 20px;
+    z-index: 100;
+    max-height: calc(90vh - 96px);
+    overflow-y: scroll;
+}
+
+.task h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.task p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.task h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.task input,
+.task textarea {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    outline: 0;
+}
+
+.FsTopBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FsTopBar div {
+    padding: 5px 20px;
+    border-radius: 7px;
+    font-size: 20px;
+    color: white;
+}
+
+.FsTopBar img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.FsTitle {
+    color: #2a3647;
+    font-size: 20px;
+}
+
+.FsDescription p {
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.FsDate {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.marginLeft {
+    margin: 0 0 0 15px;
+}
+
+.FsDate h4 {
+    margin: 0;
+}
+
+.FsDate div {
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.FsPrio img {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+}
+
+.FsPrio {
+    display: flex;
+    align-items: center;
+}
+
+.assignedContact {
+    display: flex;
+    align-items: center;
+}
+
+.assignedContact p {
+    margin: 5px 15px;
+}
+
+.FsAssigned h4 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.FsAssigned {
+    margin-bottom: 10px;
+}
+
+.prioBtnEdit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prioBtnEdit div {
+    margin: 0 !important;
+}
+
+#assignedContactsEdit {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.subtaskFs {
+    color: black !important;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.FsSubtasks h4 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.tickBox {
+    border: 1px solid black;
+    min-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

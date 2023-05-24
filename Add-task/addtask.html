@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <script src="../templates/templates.js"></script>
+    <link rel="stylesheet" href="../templates/templatesStyle.css">
+    <link rel="stylesheet" href="../Add-task/addTask.css">
+    <link rel="stylesheet" href="../globalAddTask.css">
+    <link rel="stylesheet" href="../globalStyle.css">
+    <link rel="icon" type="image/x-icon" href="../index/assets/img/join_logo.svg">
+    <!-- <link rel="stylesheet" href="../globalStyle.css"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="../globalAddTask.js"></script>
+    <script src="../globalDropdown.js"></script>
+    <script src="../globalScript.js"></script>
+    <script src="../index/mini_backend.js"></script>
+    <script src="../globalVar.js"></script>
+    <script src="../globalHTML.js"></script>
+</head>
+
+<body onload=" initialiseATP()">
+    <div w3-include-html="../templates/template.html"></div>
+    <div>
+        <div id="addTaskPageBody" class="body">
+
+            <h1 class="headline">Add Task</h1>
+            <div class="addTaskLR">
+                <div class="addTaskLeft">
+                    <div class="center">
+                        <h4>Title <p class="redStar d-none">*</p>
+                        </h4>
+                        <input id="titleField" type="text" class="textAreaStyle1" placeholder="enter a Title">
+                        <span class="formValidate" id="validateTitle">  </span>
+                        <h4>Description <p class="redStar d-none">*</p>
+                        </h4>
+                        <textarea id="descriptionField" class="textAreaStyle1"
+                            placeholder="enter a description"></textarea>
+                        <span class="formValidate" id="validateDescription">  </span>
+                        <h4>Category <p class="redStar d-none">*</p>
+                        </h4>
+                        <div class="d-none" id="newCategory">
+                            <input id="customCategory" type="text" placeholder="new Category">
+                            <div>
+                                <img onclick="reverseCategory()" src="../img/crossx.svg"><img id="tick"
+                                    onclick="addCustomCategory()" src="../img/tick.svg">
+                            </div>
+                        </div>
+                        <div class="dropdown" id="categoryDropdown">
+                            <button type="button" onclick="showDropdownATP('myDropdownATP')" class="dropbtn">
+                                <span id="dropbtnCategory">choose Category</span>
+                                <img src="../img/arrowDown.png">
+                            </button>
+                            <div id="myDropdownATP" class="dropdown-content d-none">
+                            </div>
+                        </div>
+                        <div class="d-none" id="categoryColors">
+                            <div class="categoryColor" id="1" style="background-color: #8aa4ff;"
+                                onclick="chooseColor(1, '#8aa4ff')"></div>
+                            <div class="categoryColor" id="2" style="background-color: #ff0000;"
+                                onclick="chooseColor(2, '#ff0000')"></div>
+                            <div class="categoryColor" id="3" style="background-color: #2ad300;"
+                                onclick="chooseColor(3, '#2ad300')"></div>
+                            <div class="categoryColor" id="4" style="background-color: #ff8a00;"
+                                onclick="chooseColor(4, '#ff8a00')"></div>
+                            <div class="categoryColor" id="5" style="background-color: #e200be;"
+                                onclick="chooseColor(5, '#e200be')"></div>
+                            <div class="categoryColor" id="6" style="background-color: #0038ff;"
+                                onclick="chooseColor(6, '#0038ff')"></div>
+                        </div>
+                        <span class="formValidate" id="validateCategory">  </span>
+                        <h4>Assigned to <p class="redStar d-none">*</p>
+                        </h4>
+                        <div class="dropdown">
+                            <button type="button" onclick="showDropdownATP('myAssignedDropdownATP')" class="dropbtn">
+                                <span id="dropbtnAssigned">choose Contact</span>
+                                <img src="../img/arrowDown.png"></button>
+                            <div id="myAssignedDropdownATP" class="dropdown-content d-none">
+                            </div>
+                        </div>
+                        <div id="assignedAddTask" style="display: flex; margin-top: 15px;"></div>
+                        <span class="formValidate" id="validateAssigned">  </span>
+                    </div>
+                </div>
+                <div class="centerLine">
+                    <div class="dividingLine"></div>
+                </div>
+                <div class="addTaskRight">
+                    <div class="center">
+                        <h4>Due date <p class="redStar d-none">*</p>
+                        </h4>
+                        <input id="dueDateField" name="dueDateField" class="textAreaStyle1" type="date">
+                        <span class="formValidate" id="validateDueDate">  </span>
+                        <h4>Prio <p class="redStar d-none">*</p>
+                        </h4>
+                        <div id="prioField" class="prio">
+                            <div id="Urgent-button" onclick="changeColor('Urgent')" class="button1">Urgent <img
+                                    id="Urgent" src="../img/prioUrgent.svg"></div>
+
+                            <div id="Medium-button" onclick="changeColor('Medium')" class="button1">Medium<img
+                                    id="Medium" src="../img/prioMedium.svg"></div>
+                            <div id="Low-button" onclick="changeColor('Low')" class="button1">Low <img id="Low"
+                                    src="../img/prioLow.svg"></div>
+                        </div>
+                        <span class="formValidate" id="validatePrio">  </span>
+                        <h4>Subtasks</h4>
+                        <div id="subtaskField">
+                            <div>
+                                <input id="subtaskInput" type="text" placeholder="new Subtask">
+                                <img onclick="addSubtask()" src="../img/tick.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="finishButtons">
+                    <button class="buttonGlobal1" id="createTaskButton" onclick="createTask()">Create Task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

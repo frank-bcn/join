@@ -1,0 +1,418 @@
+.headline {
+    width: 176px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.topContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 50px;
+    position: relative;
+}
+
+.taskSearchAdd {
+    display: flex;
+}
+
+.taskSearchAdd button {
+    min-width: fit-content;
+    z-index: 90;
+    margin-left: 16px;
+}
+
+#FsTask .buttonGlobal1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.buttonPosition {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*board tasks*/
+.contactPrio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.assigned {
+    display: flex;
+}
+
+.prioIcon {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+}
+
+/* search */
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.search input {
+    box-sizing: border-box;
+    padding: 13px 21px;
+    border-radius: 16px;
+    width: 200px;
+    height: 51px;
+    background: #FFFFFF;
+    outline: none;
+    border: none;
+}
+
+.search img {
+    height: 25px;
+    width: 25px;
+}
+
+.search img:last-child {
+    padding-right: 16px;
+}
+
+/* progress */
+.scrollTasks {
+    height: calc(100vh - 230px);
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.scrollButtons {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+#arrowLeft {
+    background-image: url(../img/arrowLeftDark.png);
+    background-position: center;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    border-radius: 100%;
+}
+
+#arrowLeft:hover {
+    background-image: url(../img/arrowLeftLight.png);
+    transition: 125ms;
+    cursor: pointer;
+}
+
+#arrowRight {
+    background-image: url(../img/arrowRightDark.png);
+    height: 32px;
+    width: 32px;
+    border: 0;
+    border-radius: 100%;
+}
+
+#arrowRight:hover {
+    background-image: url(../img/arrowRightLight.png);
+    transition: 125ms;
+    cursor: pointer;
+}
+
+.progressFields {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 43px;
+    top: 0;
+    font-size: 25px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    min-width: 290px;
+    padding: 24px;
+    overflow-y: hidden;
+}
+
+.progressHeaderImg {
+    height: 30px;
+    width: 30px;
+    transition: 125ms;
+    background: url("../img/plusButtonBorder.svg");
+}
+
+.progressHeaderImg:hover {
+    background-image: url("../img/plusButtonBorderHover.svg");
+    transition: 125ms;
+}
+
+.progressHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progressHeader p {
+    margin: 0;
+    font-weight: bold;
+    color: #2A3647;
+}
+
+/* todo */
+.taskFields {
+    display: flex;
+}
+
+.taskField {
+    margin-top: 16px;
+    min-height: 200px;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+
+.bg-hover {
+    border: 2px grey dashed;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.todoBox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 125ms;
+    margin: 10px 0;
+    width: 250px;
+    position: relative;
+}
+
+.trash {
+    background-image: url("../img/delete-48 (1).png");
+    transition: all 125ms;
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+}
+
+.trash:hover {
+    background-image: url("../img/delete-48 (2).png");
+    transition: all 125ms;
+}
+
+.drag {
+    background-image: url("../img/dndBlue.svg");
+    transition: all 125ms;
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dragEdit {
+    background-image: url("../img/dndBlue.svg");
+    transition: all 125ms;
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.drag:hover,
+.dragEdit:hover {
+    background-image: url("../img/dndLightBlue.svg");
+}
+
+.dragLinks {
+    padding: 10px;
+}
+
+.dragLinks h4 {
+    margin: 0 0 5px 0 !important;
+}
+
+.dragLink {
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.dragLink:hover {
+    background-color: #2a3647dc;
+    color: white;
+    cursor: pointer;
+}
+
+.moveDiv {
+    border-radius: 10px;
+    border: 1px solid #2a36476b;
+    background-color: #29aae223;
+    height: 157px;
+    cursor: default;
+}
+
+.todoBox::after {
+    height: 50px;
+    width: 100px;
+    background-color: #000000;
+}
+
+.todoBox:hover {
+    transform: rotate(2deg);
+    transition: 125ms;
+}
+
+.todoBox h4 {
+    margin: 10px 0;
+}
+
+.todoBox p {
+    margin: 0;
+}
+
+.tilt {
+    transform: rotate(2deg);
+}
+
+.category {
+    margin: 0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    background-color: coral;
+    padding: 5px 15px;
+    width: fit-content;
+}
+
+.taskDescription {
+    margin-bottom: 5px;
+}
+
+/*subtask*/
+.subtaskTrack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtaskBar {
+    height: 5px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+.subtaskProgress {
+    height: 5px;
+    background-color: #29ABE2;
+    border-radius: 10px;
+}
+
+@media(max-width: 1000px) {
+    .topContent {
+        justify-content: space-between;
+        text-align: center;
+        margin: 30px 50px;
+    }
+
+    .scrollTasks {
+        height: calc(100vh - 330px);
+    }
+
+    .progressFields::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollButtons {
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+}
+
+@media(max-width: 680px) {
+
+    .topContent {
+        flex-direction: column;
+        margin: 10px 0;
+        min-height: 120px;
+    }
+
+    .headline {
+        margin: 10px;
+    }
+
+    .taskSearchAdd button {
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+    }
+
+    .taskField {
+        min-height: 50px;
+    }
+
+    .task {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    .scrollTasks {
+        height: calc(100vh - 343px);
+    }
+
+    .scrollButtons {
+        right: 50%;
+        transform: translate(50%, 0);
+        top: 150px;
+    }
+}
+
+@media(min-width: 1630px) {
+    .progressFields {
+        justify-content: space-evenly;
+    }
+
+    .scrollButtons {
+        display: none;
+    }
+}

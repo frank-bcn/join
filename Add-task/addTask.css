@@ -1,0 +1,186 @@
+.headline {
+    font-size: 50px;
+    padding: 0;
+}
+
+#newCategory {
+    background-color: white;
+}
+
+/*add task*/
+#tasks {
+    height: 85vh;
+    padding: 64px;
+}
+
+.addTaskLR {
+    margin-top: 60px;
+}
+
+/* dropdown category*/
+#dropbtnCategory {
+    padding-right: unset;
+}
+
+/*subtask*/
+#subtaskField input {
+    width: 90%;
+}
+
+/* add task page */
+
+#addTaskPageBody {
+    z-index: -1;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.addTaskPage {
+    background-color: #f6f7f8 !important;
+    margin: 90px 0 0 272px;
+}
+
+#addTaskPageBody h4 {
+    margin: 30px 0 10px 0;
+    font-size: 18px;
+    width: 70%;
+}
+
+#addTaskPageBody h1 {
+    z-index: 99;
+    background-color: #f6f7f8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 432px);
+    margin: 50px;
+    margin-left: 110px;
+}
+
+.finishButtons {
+    position: fixed !important;
+    bottom: 50px !important;
+    right: 50px !important;
+}
+
+.center {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.categoryX {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.categoryX img:hover {
+    background-color: white;
+    border-radius: 100%;
+    transition: 125ms;
+}
+
+@media(max-width: 1000px) {
+    #tasks {
+        display: none;
+    }
+
+    .addTaskPage {
+        margin: 0;
+    }
+
+    /* #addTaskPageBody {
+        width: 100vw;
+        max-width: none;
+        height: calc(100vh - 200px);
+        margin: 100px 0;
+        padding: 0;
+        overflow: hidden;
+    } */
+
+    .centerLine {
+        height: 70vh;
+    }
+
+    .addTaskLR {
+        padding-top: 20px;
+    }
+
+    #addTaskPageBody h1 {
+        margin: 35px 0;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .center {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .finishButtons {
+        right: 20px !important;
+        bottom: 120px !important;
+    }
+}
+
+@media(max-width: 750px) {
+    .centerLine {
+        display: none;
+    }
+
+    .addTaskLR {
+        flex-direction: column;
+        width: 100vw;
+        overflow-y: scroll;
+        padding: 48px 0 100px 0;
+    }
+     
+    .addTaskLeft, .addTaskRight {
+        padding: 0 !important;
+        overflow: visible !important;
+        display: block !important;
+        height: fit-content;
+        width: 100% !important;
+    }
+
+    #addTaskPageBody h1 {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+
+    #assignedAddTask {
+        margin-top: 0 !important;
+    }
+
+    .contactBubble {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .dropbtn,
+    .prio,
+    #subtaskField,
+    .dropdown-content{
+        width: 280px !important;
+    }
+
+    .textAreaStyle1 {
+        width: calc(280px - 44px) !important;
+    }
+
+    .button1 {
+        padding: 13px 10px !important;
+    }
+}
+
+@media(max-width: 1130px) and (min-width: 1000px) {
+    #addTaskPageBody {
+        padding: 64px 0;
+    }
+}

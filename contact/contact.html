@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <script src="../index/mini_backend.js"></script>
+    <script src="/templates/templates.js"></script>
+    <link rel="icon" type="image/x-icon" href="../index/assets/img/join_logo.svg">
+    <link rel="stylesheet" href="/templates/templatesStyle.css">
+    <link rel="stylesheet" href="/contact/contact.css">
+    <link rel="stylesheet" href="/contact/contactOverlay.css">
+    <link rel="stylesheet" href="/contact/contactRightSide.css">
+    <link rel="stylesheet" href="/contact/contactResponsive.css">
+    <link rel="stylesheet" href="../globalAddTask.css">
+    <link rel="stylesheet" href="../globalStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="../globalAddTask.js"></script>
+    <script src="../globalDropdown.js"></script>
+    <script src="../globalScript.js"></script>
+    <script src="../index/data.js"></script>
+    <script src="contact.js"></script>
+    <script src="contactFormValidation.js"></script>
+    <script src="../globalHTML.js"></script>
+    <script src="../globalVar.js"></script>
+</head>
+
+<body onload="includeHTML(3); loadContact();">
+    <div w3-include-html="/templates/template.html"></div>
+    <div class="body">
+        <div id="contactList" class="contactList"></div>
+        <div id="contactRightSide" class="contactRightSide"></div>
+        <div id="contact" class="contactMenu"></div>
+        <button onclick="overlayAddContact()" id="newContact" class="newContact buttonGlobal1">
+            <div class="textNewContact">New Contact</div>
+            <img src="/img/Capa 1add.png" class="iconAdd">
+        </button>
+    </div>
+    <div id="deleteBackground" class="d-none">
+        <div class="deletePopup">
+            <p>Are you sure you want to delete this contact?</p>
+            <div>
+                <button class="buttonGlobal2" onclick="closeDeletePopUp()">No</button>
+                <button class="buttonGlobal1" onclick="deleteContact(contactClicked); closeDeletePopUp();">Yes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- add task popup -->
+    <div>
+        <div id="tasks" class="d-none">
+
+        </div>
+    </div>
+    <div id="fullscreenBackground" onclick="closeFullscreen()" class="d-none"></div>
+    <div id="FsTask" class="d-none task"></div>
+    <div id="popUpContainer" class="popUpContainer d-none"></div>
+    <div id="overlayAddContact" class="overlayContact"></div>
+    <div id="overlayEditContact" class="overlayContact"></div>
+</body>
+
+</html>

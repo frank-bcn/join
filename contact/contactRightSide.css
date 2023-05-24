@@ -1,0 +1,75 @@
+/***************************************************/
+/*********        ContactRightSide      ************/
+/***************************************************/
+
+.contactRightSide {
+    font-weight: 700;
+    position: relative;
+    left: 31%;
+}
+
+.firstTextRightSide {
+    font-size: 51px;
+}
+
+.newContact {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 10px;
+    gap: 10px;
+    position: absolute;
+    width: 193px;
+    height: 53px;
+    background: #2A3647;
+    border-radius: 10px;
+    right: 40%;
+    bottom: 10%;
+}
+
+.iconAdd {
+    height: 22px;
+}
+
+.newContact:hover {
+    background-color: #29ABE2;
+
+}
+
+.containerRightSide {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 7%;
+}
+
+.texttemplatesKanban {
+    position: absolute;
+    top: 0%;
+    font-size: 60%;
+    left: 0%;
+    display: none;
+}
+
+.textRightSide {
+    font-weight: 400;
+    font-size: 20px;
+    color: #2A3647;
+}
+
+.textNewContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balken {
+    height: 59px;
+    border: 1.5px solid #29ABE2;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+

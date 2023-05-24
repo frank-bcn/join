@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/join_logo.svg">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexMedia.css">
+    <link rel="stylesheet" href="../globalStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="./mini_backend.js"></script>
+    <script src="../globalScript.js"></script>
+    <script src="./data.js"></script>
+    <script src="templatesAnimation.js"></script>
+    <script src="../globalVar.js"></script>
+</head>
+
+<body onload="init()">
+
+    <div id="headpart">
+
+        <div id="noAnimation" class="d-none">
+            <a href="./index.html"> <img id="desktopLogoNoAnimation" src="./assets/img/join_logo.svg" alt="" /></a>
+        </div>
+        <div id="introAnimationContainer" class="d-none">
+            <a href="./index.html"> <img id="desktopLogo" src="./assets/img/join_logo.svg" alt="" /></a>
+        </div>
+        <div id="headpartRightSideContainer" class="zero-opacity">
+            <span>Not a Join user?</span>
+            <a onclick="renderSignUp()" class="btn">Sign up</a>
+        </div>
+
+    </div>
+
+    <div id="container">
+        <main id="loginContainer" class="d-none">
+            <div id="headlineContainer">
+                <div class="h1">Log in</div>
+                <div id="borderBottom"></div>
+            </div>
+
+
+
+            <form>
+                <input required id="email" type="email" placeholder="Email" />
+                <input required id="password" type="password" placeholder="Password" />
+                <div id="wrongLogin"></div>
+            </form>
+
+            <div id="rememberMeContainer">
+                <div>
+                    <input type="checkbox" id="rememberMe" />
+                    <span>Remember me</span>
+                </div>
+
+                <a onclick="renderForgotPw()">Forgot my password</a>
+            </div>
+
+            <section id="loginSection">
+                <button id="loginBtn" class="buttonGlobal1" onclick="login()">Log in</button>
+                <button id="guestLoginBtn" class="buttonGlobal2" onclick="guestLogin()">Guest Log in</button>
+            </section>
+        </main>
+        <div id="msgBox" class="d-none">
+        </div>
+    </div>
+
+    <div id="mobileAnimationContainer">
+        <img id="mobileLogo" src="./assets/img/mobileLogo.png" alt="" />
+    </div>
+
+    <div id="blackLogoAnimationContainer">
+        <img id="blackLogo" src="./assets/img/join_logo.svg" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,689 @@
+@media (max-width:3000px) {
+    .closeInfoContainer {
+        display: none;
+    }
+
+    .newContact {
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+    }
+
+    .closeOverlay {
+        cursor: pointer;
+    }
+
+    .overlayContact {
+        width: 88%;
+        height: 500px;
+    }
+}
+
+@media (max-width:1350px) {
+    .inputContainerEdit {
+        left: 55%;
+        width: 40%;
+    }
+
+    .contact {
+        width: 80%;
+    }
+
+    .contactListSide {
+        width: 80%;
+    }
+
+    .selected {
+        background-color: #2A3647;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .contactData1 {
+        font-size: 30px;
+    }
+
+    .logoOverlayEdit {
+        left: 370px;
+    }
+
+    #cancelButton {
+        display: none;
+    }
+
+    .contactMenu {
+        display: flex;
+        position: absolute;
+        right: 60%;
+        top: 0%;
+    }
+
+    .autoLayoutEdit {
+        width: 270px;
+    }
+
+    .inputContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        width: 70%;
+        height: 271px;
+        top: 100px;
+        right: 20px;
+    }
+
+    .overlayTextEdit {
+        font-size: 45px;
+    }
+
+    .containerRightSide {
+        scale: 0.9;
+    }
+
+    .contactDeleat {
+        margin-top: 30%;
+        margin-left: -48%;
+    }
+}
+
+@media (max-width:1070px) {
+    .inputContainer {
+        width: 65%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 10px;
+        height: 61px;
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+    }
+}
+
+@media (min-width:1000px) {
+    .contactList {
+        max-width: 350px;
+    }
+}
+
+@media (max-width:1000px) {
+    .inputContainer * {
+        margin: 0 0 5px 0 !important;
+    }
+
+    .contactBody {
+        position: absolute;
+        top: 101px;
+        overflow: hidden;
+        right: 0;
+        left: -17px;
+        bottom: 100px;
+    }
+
+    .newContact {
+        bottom: 20px !important;
+        right: 20px !important;
+        left: unset;
+    }
+
+    .closeOverlayWhite {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .logoEdit {
+        display: none;
+    }
+
+    .containerRightSide {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0px;
+        left: 39%;
+    }
+
+    .overlayTextAdd {
+        margin: 0;
+        font-size: 51px;
+    }
+
+    .contactMenu {
+        display: flex;
+        position: absolute;
+        right: 60%;
+        top: -10%;
+    }
+
+    .contactImg1 {
+        width: 90px;
+        height: 90px;
+        top: 36px;
+    }
+
+    .contactContainer1 {
+        margin-left: 130px;
+    }
+
+    .autoLayoutEdit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 66px 46px;
+        gap: 12px;
+        isolation: isolate;
+        position: absolute;
+        width: auto;
+        height: 134px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        background: #2A3647;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .overlayTextEdit {
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 51px;
+        color: #FFFFFF;
+    }
+
+    .overlayborderEdit {
+        border: 1.5px solid #29ABE2;
+        transform: rotate(90deg);
+        height: 95px;
+        margin-right: 256px;
+        margin-top: -62px;
+    }
+
+    .logoOverlayEdit {
+        display: flex;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: 0px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        background: #D1D1D1;
+        border-radius: 100%;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
+    }
+
+    .initialsOverlay {
+        font-size: 35px;
+    }
+
+    .closeOverlayEdit {
+        display: none;
+    }
+
+    .inputContainerEdit {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        position: absolute;
+        height: 271px;
+        top: 50%;
+        right: 10%;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .overlayInputName {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 21px;
+        gap: 10px;
+        width: 100%;
+        height: 51px;
+        background: #FFFFFF;
+        border: 1px solid #D1D1D1;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .overlayInputMail {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 21px;
+        gap: 10px;
+        width: 100%;
+        height: 51px;
+        background: #FFFFFF;
+        border: 1px solid #D1D1D1;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .editContactSave {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 47px;
+        background: #2A3647;
+        border-radius: 10px;
+        font-size: 21px;
+        text-align: center;
+        color: white;
+        right: 50%;
+        transform: translate(50%);
+        top: 87%;
+        position: absolute;
+    }
+
+    .inputContainer input {
+        margin: 10px 0px !important;
+    }
+
+    .overlayContact {
+        /* top: 2%; */
+        width: 500px;
+        height: 80vh;
+        transform: translateX(220%);
+        transition: transform 1s;
+        /* left: calc(50% - 35%); */
+    }
+
+    .autoLayout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        isolation: isolate;
+        position: absolute;
+        width: 100%;
+        height: 33%;
+        left: 0px;
+        top: 0px;
+        background: #2A3647;
+        border-radius: 30px 30px 0 0;
+    }
+
+    form {
+        position: relative;
+        width: 100%;
+        top: 33%;
+        height: 66%;
+    }
+
+    .containerOverRightSide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+
+    .addLogo {
+        display: none;
+    }
+
+    .overlayText2Add {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .overlayborderAdd {
+        margin-right: 210px;
+    }
+
+    .logoOverlay {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 7%;
+        background: #D1D1D1;
+        margin-left: 0px;
+        margin-top: 135px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
+    }
+
+    .closeOverlay {
+        display: none;
+    }
+
+    .inputContainer {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 40%;
+        width: 80%;
+    }
+
+    .overlayInputNameAdd {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 21px;
+        gap: 10px;
+        width: 100%;
+        height: 51px;
+        background: #FFFFFF;
+        border: 1px solid #D1D1D1;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .overlayInputMailAdd {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 21px;
+        gap: 10px;
+        width: 100%;
+        height: 51px;
+        background: #FFFFFF;
+        border: 1px solid #D1D1D1;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .buttons {
+        gap: 25px;
+        flex-direction: row;
+        width: 80%;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .contactRightSide {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 61px;
+        color: #000000;
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media (max-width:800px) {
+    .contactRightSide {
+        font-size: 45px;
+    }
+
+    .containerRightSide {
+        scale: 0.8;
+    }
+}
+
+@media(min-width:630px) and (max-width:1000px){
+    .logoOverlay{
+        top: 25%;
+    }
+}
+
+@media (max-width:630px) {
+    .closeInfoContainer img {
+        height: 20px;
+    }
+
+    .contactBody {
+        left: 0;
+    }
+
+    .contactList {
+        width: 100%;
+        z-index: 4;
+    }
+
+    .contactMenu {
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .containerRightSide {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background: #F5F5F5;
+        z-index: 3;
+    }
+
+    .firstTextRightSide {
+        position: absolute;
+        top: 7%;
+        left: 12%;
+        font-size: 50px;
+        z-index: 3;
+    }
+
+    .textRightSide {
+        position: absolute;
+        top: 14%;
+        left: 13%;
+    }
+
+    .balken {
+        position: absolute;
+        top: 20%;
+        left: 9%;
+        width: 20%;
+        height: 0px;
+    }
+
+    .selected {
+        background-color: transparent;
+    }
+
+    .contactDataContainer {
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: #f6f7f8;
+    }
+
+    .picAndData {
+        left: 15%;
+        top: 20%;
+    }
+
+    .closeInfoContainer {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        cursor: pointer;
+    }
+
+    .texttemplatesKanban {
+        position: absolute;
+        top: 0%;
+        font-size: 32%;
+        left: 13%;
+        display: block;
+    }
+
+    .containerFirst {
+        display: flex;
+        width: 100%;
+        right: 10%;
+        margin-right: 5%;
+    }
+
+    .contactContainer1 {
+        margin-top: 10px;
+    }
+
+    .editConact1 {
+        display: none;
+    }
+
+    .editContactMobile {
+        display: block;
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+    }
+
+    .contactData1 {
+        font-size: 25px;
+    }
+
+    .autoLayoutEdit {
+        border-radius: 30px, 0;
+    }
+
+    .overlayContact {
+        width: 90%;
+        max-width: 400px;
+        height: 80%;
+        max-height: 650px;
+    }
+
+    .closeOverlayEdit {
+        top: 38%;
+    }
+
+    .logoEdit {
+        display: none;
+    }
+}
+
+@media (max-width:420px) {
+    .overlayTextAdd {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:350px) {
+    .overlayTextAdd {
+        font-size: 40px;
+    }
+
+    .overlayborderEdit {
+        border: 1.5px solid #29ABE2;
+        transform: rotate(90deg);
+        height: 73px;
+        margin-right: 210px;
+        margin-top: -50px;
+    }
+
+    .texttemplatesKanban {
+        font-size: 50%;
+    }
+
+    .firstTextRightSide {
+
+        z-index: 3;
+        left: 13%;
+    }
+
+    .contactData1 {
+        font-size: 18px;
+    }
+
+    .texttemplatesKanban {
+        font-size: 20%;
+    }
+
+    .overlayTextEdit {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:280px) {
+    .overlayTextAdd {
+        font-size: 22px;
+    }
+
+    .overlayborderEdit {
+        left: 55px !important;
+    }
+}
+
+@media (max-height:830px) and (max-width:1000px) {
+    .logoOverlay {
+        display: none;
+    }
+
+    .autoLayout {
+        justify-content: flex-end;
+    }
+
+    .inputContainer {
+        top: 33%;
+    }
+
+    .inputContainer input {
+        min-height: 50px;
+    }
+
+    .formValidate {
+        font-size: 14px;
+    }
+
+    .inputContainerEdit * {
+        height: 40px;
+        margin: 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .overlayborderEdit {
+        display: none;
+    }
+
+    .logoOverlayEdit {
+        display: none;
+    }
+
+    .inputContainerEdit {
+        top: 40%;
+    }
+
+    .autoLayoutEdit {
+        height: 55px;
+    }
+
+    .textRightSide {
+        top: 13%;
+    }
+
+    .balken {
+        top: 22%;
+        left: 7%;
+    }
+}

@@ -1,0 +1,61 @@
+.body {
+    position: relative;
+    margin-left: 272px;
+    margin-top: 90px;
+    height: calc(100vh - 218px);
+    background-color: rgba(233, 233, 233, 0.487);
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 64px 128px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.helpParagraphs {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph {
+    display: flex;
+    gap: 35px;
+}
+
+button {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
+#backArrow {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+@media (max-width:1000px) {
+    .body {
+        height: calc(100vh - 328px);
+        margin: 100px auto;
+        overflow-y: scroll;
+        padding: 64px;
+    }
+}
+
+@media (max-width:600px) {
+    .body {
+        height: calc(100vh - 264px);
+        padding: 32px;
+    }
+    #backArrow{
+        top: 32px;
+        right: 32px;
+    }
+}
